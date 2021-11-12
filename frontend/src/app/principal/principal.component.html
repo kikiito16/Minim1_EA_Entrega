@@ -1,0 +1,14 @@
+<div class="lista">
+    <h2>LISTA DE VACUNADOS</h2>
+
+    <div>
+        <app-datos-vacunados *ngFor="let vacunado of vacunados"
+            [vacunado]="vacunado">
+        </app-datos-vacunados>
+    </div>
+    
+</div>
+
+<div>
+    <button (click)="nuevoVacunado()" class="button" >Añadir Nuevo Vacunado</button>
+</div>

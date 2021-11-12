@@ -1,0 +1,25 @@
+<div class="datos-vacunado" *ngIf="vacunado">
+    <p>
+        Nombre del vacunado: {{vacunado.nombrepaciente}}
+    </p>
+
+    <p>
+        ID del vacunado: {{vacunado.id}}
+    </p>
+
+    <p>
+        Descripcion: {{vacunado.descripcion}}
+    </p>
+
+    <p>
+        Tecnologia: {{vacunado.tecnologia}}
+    </p>
+
+    <p>
+        Fecha de aceptacion: {{vacunado.fecha_de_aceptacion}}
+    </p>
+
+    <button (click) = "modificar()">
+        MODIFICAR
+    </button>
+</div>
